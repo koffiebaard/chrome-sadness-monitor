@@ -1,0 +1,14 @@
+#!/bin/bash
+
+while [ 1 == 1 ];
+	asdasd="";
+
+	do for whut in `seq 1 $(echo "($(ps aux | grep chrome | awk '{print $3}' | egrep '[0-9\.]+' | awk -vORS=+ '{ print $1 }' | sed 's/+$//')) / 2" | bc)`; do
+		asdasd="$asdasd :(";
+	done;
+
+	echo -ne "$asdasd\r"
+
+	sleep 10;
+done;
+echo
